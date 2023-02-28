@@ -172,9 +172,9 @@ ___
 | `collection_name` | `String` |
 | `max_supply` | `u32` |
 | `mkt_fee` | `u32` |
-| `schema_fields` | [`Vec<NCNameType>`](modules.md#ncnametype)[] |
+| `schema_fields` | [`Vec<NCNameType>`](modules.md#ncnametype) |
 | `schema_name` | `String` |
-| `template_fields` | [`Vec<NCNameType>`](modules.md#ncnametype)[] |
+| `template_fields` | [`Vec<NCNameType>`](modules.md#ncnametype) |
 | `template_name` | `String` |
 | `user` | `String` |
 | `user_prv_active_key` | `String` |
@@ -569,8 +569,8 @@ ___
 | :------ | :------ |
 | `col_name` | `String` |
 | `creator` | `String` |
-| `immutable_data` | [`Vec<NCKeyValPair>`](modules.md#nckeyvalpair)[] |
-| `mutable_data` | [`Vec<NCKeyValPair>`](modules.md#nckeyvalpair)[] |
+| `immutable_data` | [`Vec<NCKeyValPair>`](modules.md#nckeyvalpair) |
+| `mutable_data` | [`Vec<NCKeyValPair>`](modules.md#nckeyvalpair) |
 | `payer` | `String` |
 | `payer_prv_key` | `String` |
 | `sch_name` | `String` |
@@ -695,7 +695,7 @@ ___
 | :------ | :------ |
 | `asset_id` | `String` |
 | `editor` | `String` |
-| `new_data` | [`NCKeyValPair`](modules.md#nckeyvalpair)[] |
+| `new_data` | [`Vec<NCKeyValPair>`](modules.md#nckeyvalpair) |
 | `owner` | `String` |
 | `payer` | `String` |
 | `payer_prv_key` | `String` |
@@ -733,7 +733,7 @@ ___
 | :------ | :------ |
 | `more` | `bool` |
 | `next_key` | `String` |
-| `rows` | [`NCPoolInfo`](modules/internal_.md#ncpoolinfo)[] |
+| `rows` | [`Vec<NCPoolInfo>`](modules/internal_.md#ncpoolinfo) |
 
 #### Defined in
 
@@ -904,7 +904,7 @@ ___
 
 ### default\_nft\_schema
 
-• `Const` **default\_nft\_schema**: { `name`: `String` = 'name'; `type`: `String` = "String" }[]
+• `Const` **default\_nft\_schema**: { `name`: `String`, `nft_schema_type`: `String`}
 
 #### Defined in
 
@@ -934,7 +934,7 @@ ___
 
 ### file\_schema
 
-• `Const` **file\_schema**: { `name`: `String` = 'name'; `type`: `String` = 'String' }[]
+• `Const` **file\_schema**: { `name`: `String`, `file_schema_type`: `String`}[]
 
 #### Defined in
 
@@ -944,7 +944,7 @@ ___
 
 ### link\_schema
 
-• `Const` **link\_schema**: { `name`: `String` = 'name'; `type`: `String` = 'String' }[]
+• `Const` **link\_schema**: { `name`: `String`, `link_schema_type`: `String`}[]
 
 #### Defined in
 
@@ -954,7 +954,7 @@ ___
 
 ### profile\_schema
 
-• `Const` **profile\_schema**: { `name`: `String` = "name"; `type`: `String` = "String" }[]
+• `Const` **profile\_schema**: { `name`: `String`, `profile_schema_type`: `String`}[]
 
 #### Defined in
 
