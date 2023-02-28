@@ -5,7 +5,9 @@ This is a prototype of a Rust SDK providing functionality for interacting with t
 The expected api functionality is exampled via the `main.rs` file.
 
 
-//** This command will not yet work as rs_ncdao has not *yet* been uploaded to crates.io. **//
+Officially published at: https://crates.io/crates/nc_rsdk
+
+Documentation will be made available at: https://docs.rs/nc_rsdk
 
 
 ## Install 

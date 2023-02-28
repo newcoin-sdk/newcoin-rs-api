@@ -1,3 +1,6 @@
+//! # rs_ncdao
+//! rs_ncdao is an api-wrapper, for the newcoin api/protocol.
+//! rs_ncdao uses reqwest/tokio to manage api calls and responses.
 #![allow(dead_code)]
 #![allow(unused_imports)]
 #![allow(unused_parens)]
@@ -10,8 +13,9 @@ mod json_rpc;
 mod ncdao;
 mod submit;
 mod types;
+mod utils;
 
-use reqwest::{Error, Response, Client};
+use reqwest::{Error, Response, Client, Request};
 
 use crate::c_api::chain_api::{get_table_rows, ChainApi, get_table_rows_with_payload, get_proposal_by_id};
 use crate::eos_api::api_types::AnyType;
