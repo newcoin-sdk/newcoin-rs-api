@@ -5,10 +5,12 @@ This is a prototype of a Rust SDK providing functionality for interacting with t
 The expected api functionality is exampled via the `main.rs` file.
 
 
-//** This command will not yet work as rs_ncdao has not *yet* been uploaded to crates.io **//
+//** This command will not yet work as rs_ncdao has not *yet* been uploaded to crates.io. **//
+
+
 ## Install 
 
-    cargo install rs_ncdao
+    cargo install nc_rsdk
 
 ## Run the app
 
@@ -243,7 +245,7 @@ ___
 | `pass_rate` | `u32` |
 | `proposer` | `String` |
 | `proposer_prv_key` | `String` |
-| `quantity` | { `contract`: `String` ; `quantity`: `String`  } |
+| `quantity` | (`Struct`) { `contract`: `String`, `quantity`: `String`  } |
 | `quantity.contract` | `String` |
 | `quantity.quantity` | `String` |
 | `to` | `String` |

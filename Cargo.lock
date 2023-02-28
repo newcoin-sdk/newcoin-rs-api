@@ -610,6 +610,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "nc_rsdk"
+version = "0.1.0"
+dependencies = [
+ "dotenv",
+ "dotenv_codegen",
+ "eosio",
+ "flate2",
+ "futures",
+ "once_cell",
+ "reqwest",
+ "serde",
+ "sha2 0.10.6",
+ "sha256",
+ "tokio",
+]
+
+[[package]]
 name = "num_cpus"
 version = "1.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -800,23 +817,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "winreg",
-]
-
-[[package]]
-name = "rs_ncdao"
-version = "0.1.0"
-dependencies = [
- "dotenv",
- "dotenv_codegen",
- "eosio",
- "flate2",
- "futures",
- "once_cell",
- "reqwest",
- "serde",
- "sha2 0.10.6",
- "sha256",
- "tokio",
 ]
 
 [[package]]

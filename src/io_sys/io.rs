@@ -79,3 +79,26 @@ impl Default for NCInitServices {
         }
     }
 }
+
+
+#[cfg(tests)]
+
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_nc_init() {
+
+        let nodeos_url = String::from("https://nodeos-dev.newcoin.org");
+        let hyperion_url = String::from("https://hyperion-dev.newcoin.org");
+        let atomic_assets_url = String::from("https://atomic-nefty-devnet.newcoin.org/");
+        let nodeos_proxy_url = String::from("https://auth-eu-dev.newsafe.org/v1/tx/newcoin");
+        
+        let nc_init_object = NCInit::default();
+
+        assert_eq!(nc_init_oject.nodeos_url, nodeos_url);
+        assert_eq!(nc_init_oject.hyperion_url, hyperion_url);
+        assert_eq!(nc_init_oject.atomic_assets_url, atomic_assets_url);
+        assert_eq!(nc_init_oject.nodeos_proxy_url, nodeos_proxy_url);
+    }
+}
