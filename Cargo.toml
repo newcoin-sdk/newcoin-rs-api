@@ -6,7 +6,7 @@ description = "This is a prototype of a Rust SDK providing functionality for int
 documentation = "https://docs.rs/nc_rsdk"
 readme = "README.md"
 repository = "https://github.com/newcoin-sdk/newcoin-rs-api"
-license = "MIT or Apache-2.0"
+license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
