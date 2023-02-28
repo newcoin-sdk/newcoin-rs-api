@@ -47,11 +47,11 @@ async fn main() -> Result<(), Error> {
 
     let gtr_wp_response = get_proposal_by_id(&payload).await;
 
-    // let data_2 = gtr_wp_response.unwrap_err();
+    let data_2 = gtr_wp_response.unwrap_err();
     let gtr_wp: Response = get_table_rows_with_payload(&payload).await.unwrap();
 
     println!("Content 1: {:?} \n", data_1);
-    // println!("Content 2: {:?}", data_2);
+    println!("Content 2: {:?}", data_2);
 
     Ok(())
 
