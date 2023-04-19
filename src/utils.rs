@@ -8,6 +8,7 @@ struct NcoReadApi { // We must split this struct out.
 }
 
 
+
 struct OptStruct;
 struct DataOpts;
 struct AssetApiParams;
@@ -29,6 +30,7 @@ async fn get_assets(options: OptStruct, data: DataOpts, page: i32, limit: i32) -
 }
 
 impl NcoReadApi {
+    /// Provides a new instance of the Newcoin Read Api.
     fn new() -> NcoReadApi {
         let nc_init = NCInitUrlsDev::default();
         NcoReadApi {
@@ -37,7 +39,7 @@ impl NcoReadApi {
         }
     }
 
-    /// Makes a call to the hyperion_url.
+    /// Makes a call to the hyperion_url to read transaction data.
     
     pub async fn read_tx(self, tx_id: String) -> Result<Response, Error> {
         

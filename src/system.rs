@@ -6,12 +6,14 @@ pub struct NCInit {
 }
 
 impl Default for NCInit {
+    /// Returns a default NCInit struct for developers to access all of the
+    /// necessary Newcoin URLS.
     fn default() -> Self {
-        let service_val = NCInitServices::default();
+        let service_vals = NCInitServices::default();
         let url_vals = NCInitUrlsDev::default();
 
         NCInit {
-            services: service_val,
+            services: service_vals,
             urls: url_vals,
             is_proxy: false,
             debug: true,
@@ -35,6 +37,7 @@ pub struct NCInitUrlsProd {
 }
 
 impl Default for NCInitUrlsDev {
+    /// Provides a default struct for accessing development URLS.
     fn default() -> Self {
         Self {
             nodeos_url: String::from("https://nodeos-dev.newcoin.org"),
@@ -46,6 +49,7 @@ impl Default for NCInitUrlsDev {
 }
 
 impl Default for NCInitUrlsProd {
+    /// Provides a default struct for accessing production URLS.
     fn default() -> Self {
         Self {
             nodeos_url: String::from("https://nodeos-dev.newcoin.org"),
@@ -67,6 +71,7 @@ pub struct NCInitServices {
 }
 
 impl Default for NCInitServices {
+    /// Provides a default struct for accessing NC service related URLS.
     fn default() -> Self {
         Self {
             eosio_contract: String::from("eosio"),

@@ -1,6 +1,10 @@
 //! # rs_ncdao
-//! rs_ncdao is an api-wrapper, for the newcoin api/protocol.
+//! rs_ncdao is an api-wrapper, for the newcoin api/protocol, predicated on EOS.IO
 //! rs_ncdao uses reqwest/tokio to manage api calls and responses.
+//! As of yet there are very few dependencies, mainly serde for de/serializing
+//! objects so that they can be distributed beyond the Rust SDK,
+//! i.e for SDK's in other languages, or web-apps.
+//! This functionality will also be made available via compilation to web assembly.
 #![allow(dead_code)]
 #![allow(unused_imports)]
 #![allow(unused_parens)]
@@ -8,10 +12,8 @@
 extern crate dotenv_codegen;
 mod c_api;
 mod eos_api;
-mod io_sys;
 mod json_rpc;
 mod ncdao;
-mod submit;
 mod types;
 mod utils;
 
